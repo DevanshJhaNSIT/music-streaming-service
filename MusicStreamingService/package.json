@@ -1,0 +1,16 @@
+{
+  "name": "music-streaming-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Spotify-inspired music streaming service built with the MERN stack in JavaScript.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
